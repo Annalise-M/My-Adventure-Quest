@@ -1,14 +1,19 @@
-import makeUser from './make-user.js';
+import quests from '../data/data.js';
+import makeListItemLink from './make-list-item-link.js';
 
-const myForm = document.getElementById('user-form');
+// need to import the quest data into a new file of data => data
 
-// here's my submit listener
-myForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+// quests.forEach((quest) => {
+//     const li = makeListItemLink(quest);
 
-    const formData = new FormData(myForm);
+// //     URL.appendChild(li);
 
-    const user = makeUser(formData);
-    const stringyUser = JSON.stringify(user);
-    localStorage.setItem('USER', stringyUser);
+// * un note const ul and const user below
+const ul = document.getElementById('list');
+
+// const user = JSON.parse(localStorage.getItem('USER'));
+
+quests.forEach((quest) => {
+    const li = makeListItemLink(quest);
+    URL.appendChild(li);
 });

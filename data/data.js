@@ -8,7 +8,7 @@ const kingKoopa = {
         top: '89%',
         left: '44%'
     },
-    image: 'https://i.pinimg.com/originals/de/6c/58/de6c580e973effceb02789c68551344a.gif.jpg',
+    image: 'https://i.pinimg.com/originals/de/6c/58/de6c580e973effceb02789c68551344a.gif',
     description: `
         You enter the quest chamber only to be confronted by King Koopa! And he looks angry! What do you do?
     `,
