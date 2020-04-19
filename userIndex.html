@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="userStyle.css">
+    <title>Mario Cart User Page</title>
 </head>
 
 <body>
+    <header>Welcome to Mario Cart Adventure!</header>
+    <!-- set up user form in userApp.js -->
+    <form id="user-form">
+        <label>
+            Class
+            <input name="class">
+        </label>
+        <label>
+            <button onclick="window.location.href = '../map'">Submit</button>
+        </label>
+    </form>
 
     <script type="module" src="app.js"></script>
 </body>
